@@ -1,7 +1,13 @@
-Ensuring secure authentication for different user roles (student, teacher,
-admin).
-• Designing a flexible system that can handle a large number of questions
-and results.
-• Providing real-time evaluation and feedback for students after exams.
-• Efficiently managing data such as student records, exam questions, and
-results.
+While developing the Online Examination System, several challenges are anticipated that will require careful planning and technical solutions:
+•	Ensuring Secure Authentication:
+o	Implementing a secure authentication system is critical to prevent unauthorized access. This involves securely storing passwords, ensuring role-based access control, and possibly using encryption techniques or two-factor authentication to enhance security.
+
+•	Designing a Scalable System:
+o	The system must be designed to handle a large number of questions in the question bank and accommodate numerous students taking exams simultaneously. Scalability in terms of data handling and performance optimization will be crucial to ensure smooth operation during peak exam periods.
+
+•	Providing Real-time Evaluation and Feedback:
+o	For objective-type questions, providing instant feedback is essential to enhance the student experience. This requires efficient algorithms for automated grading, which must be implemented in a way that minimizes processing time while maintaining accuracy.
+
+•	Efficient Data Management:
+o	The system will need to manage a large amount of data, including student records, exam results, and exam questions. Ensuring that data is stored securely, retrieved efficiently, and backed up regularly will be key challenges to overcome.
+

@@ -41,30 +41,25 @@ bool authenticate(string role, string username, string password) {
 
 /**
  * Add a new question to the exam question set.
- * 
- * Asks for the question and its correct answer and adds it to the global list of questions.
  */
 void addQuestion() {
     string question, answer;
     cout << "Enter the question: ";
     cin.ignore();
-    getline(cin, question);
+    getline(cin, question);  // Get the full question with spaces
     cout << "Enter the correct answer: ";
-    getline(cin, answer);
-    questions.push_back(make_pair(question, answer));
+    getline(cin, answer);  // Get the full answer
+    questions.push_back(make_pair(question, answer));  // Add the new question and answer to the list
     cout << "Question added successfully!\n";
 }
 
 /**
- * Allows a student to take the exam.
- * 
- * The student answers the questions one by one, and the system compares the answers with the correct ones.
- * The student's score is saved and displayed at the end.
+ * Allows a student to take the exam by answering the predefined questions.
  * 
  * @param student The username of the student taking the exam.
  */
 void takeExam(string student) {
-    if (questions.empty()) {
+    if (questions.empty()) {  // Check if there are any questions
         cout << "No questions available yet!\n";
         return;
     }
@@ -73,52 +68,51 @@ void takeExam(string student) {
     string studentAnswer;
     cout << "Starting the exam...\n";
 
+    // Loop through each question
     for (int i = 0; i < questions.size(); ++i) {
-        cout << "Q" << i + 1 << ": " << questions[i].first << endl;
+        cout << "Q" << i + 1 << ": " << questions[i].first << endl;  // Display the question
         cout << "Your answer: ";
-        getline(cin, studentAnswer);
+        getline(cin, studentAnswer);  // Get student's answer
 
-        if (studentAnswer == questions[i].second) {
+        if (studentAnswer == questions[i].second) {  // Compare with the correct answer
             score++;
         }
     }
 
-    results[student] = score;
+    results[student] = score;  // Save the student's score
     cout << "Exam completed! Your score is: " << score << "/" << questions.size() << endl;
 }
 
 /**
- * Displays the exam results of a student.
- * 
- * If the student has taken the exam, their score is displayed. Otherwise, a message is shown indicating that they haven't taken the exam yet.
+ * Displays the results of a student.
  * 
  * @param student The username of the student whose results are to be displayed.
  */
 void displayResults(string student) {
-    if (results.find(student) != results.end()) {
-        cout << "Your score: " << results[student] << "/" << questions.size() << endl;
+    if (results.find(student) != results.end()) {  // Check if the student has taken the exam
+        cout << "Your score: " << results[student] << "/" << questions.size() << endl;  // Display score
     } else {
         cout << "No results found. Please complete the exam.\n";
     }
 }
 
 /**
- * Menu for admin users, allowing them to add questions and view registered students.
+ * Admin menu options: add questions and view all registered students.
  */
 void adminMenu() {
     int choice;
     do {
         cout << "\nAdmin Menu\n1. Add Question\n2. View All Students\n3. Logout\nChoice: ";
         cin >> choice;
-        cin.ignore();  
+        cin.ignore();  // Ignore any newline characters
 
         switch (choice) {
             case 1:
-                addQuestion();
+                addQuestion();  // Admin can add a question
                 break;
             case 2:
                 cout << "Students Registered:\n";
-                for (auto &s : studentData) {
+                for (auto &s : studentData) {  // Display all students
                     cout << " - " << s.first << endl;
                 }
                 break;
@@ -130,18 +124,18 @@ void adminMenu() {
 }
 
 /**
- * Menu for teacher users, allowing them to add questions.
+ * Teacher menu options: add questions.
  */
 void teacherMenu() {
     int choice;
     do {
         cout << "\nTeacher Menu\n1. Add Question\n2. Logout\nChoice: ";
         cin >> choice;
-        cin.ignore();  
+        cin.ignore();  // Ignore any newline characters
 
         switch (choice) {
             case 1:
-                addQuestion();
+                addQuestion();  // Teacher can add a question
                 break;
             case 2:
                 cout << "Logging out...\n";
@@ -151,7 +145,7 @@ void teacherMenu() {
 }
 
 /**
- * Menu for student users, allowing them to take the exam and view their results.
+ * Student menu options: take the exam and view results.
  * 
  * @param student The username of the student.
  */
@@ -160,14 +154,14 @@ void studentMenu(string student) {
     do {
         cout << "\nStudent Menu\n1. Take Exam\n2. View Results\n3. Logout\nChoice: ";
         cin >> choice;
-        cin.ignore();  
+        cin.ignore();  // Ignore any newline characters
 
         switch (choice) {
             case 1:
-                takeExam(student);
+                takeExam(student);  // Student can take the exam
                 break;
             case 2:
-                displayResults(student);
+                displayResults(student);  // Student can view their results
                 break;
             case 3:
                 cout << "Logging out...\n";
@@ -177,9 +171,7 @@ void studentMenu(string student) {
 }
 
 /**
- * Main function that starts the Online Examination System.
- * 
- * Handles user login, verifies credentials, and directs the user to the appropriate menu based on their role.
+ * Main function: handles user login, authentication, and redirects to role-specific menus.
  */
 int main() {
     string role, username, password;
@@ -193,7 +185,7 @@ int main() {
     cout << "Enter password: ";
     cin >> password;
 
-    // Authenticate user
+    // Authenticate the user based on their role
     if (!authenticate(role, username, password)) {
         cout << "Invalid login credentials!\n";
         return 0;
@@ -201,7 +193,7 @@ int main() {
 
     cout << "Login successful!\n";
 
-    // Direct to role-specific menus
+    // Direct to role-specific menus based on user role
     if (role == "admin") {
         adminMenu();
     } else if (role == "teacher") {

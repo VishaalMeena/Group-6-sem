@@ -1,4 +1,16 @@
-• To build a platform for students to take exams online.
-• Allow teachers to create, manage, and evaluate exams.
-• Enable admins to manage users, view results, and oversee system
-operations.
+The primary objective of this project is to design and implement a robust and secure Online Examination System that will cater to the needs of students, teachers, and administrators. This system aims to streamline the exam process, enhance accessibility, and provide a user-friendly experience for all parties involved.
+
+1.	For Students:
+o	To build a reliable platform where students can take exams remotely from any location, using any compatible device (laptop, tablet, or smartphone).
+o	To ensure the system is intuitive, easy to navigate, and provides students with instant feedback on objective-type questions (e.g., multiple choice).
+o	To provide students with the flexibility to take exams within a predefined time window, minimizing the pressure of being present in a specific physical location.
+2.	For Teachers:
+o	To offer teachers the ability to create, manage, and evaluate exams in a streamlined, efficient manner.
+o	To enable the creation of various question types, such as multiple choice, true/false, short answer, and essay questions, which can be stored in a reusable question bank.
+o	To assist teachers in grading exams, with the system automating the evaluation of objective questions while allowing manual grading for subjective responses.
+
+
+3.	For Administrators:
+o	To provide administrators with comprehensive control over the platform, including the ability to manage users (students, teachers, and other admins) effectively.
+o	To enable administrators to view and generate reports on exam performance and oversee system operations to ensure smooth functionality.
+o	To offer tools for monitoring overall system performance, including security and user activity, ensuring that the platform runs efficiently and securely.

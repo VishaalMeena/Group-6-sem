@@ -1,4 +1,7 @@
-A fully functional online examination system that allows students to log in,
-take exams, and view their results.
-• Teachers can add new exam questions and update the question bank.
-• Admins have complete control over user management and system data.
+Upon successful completion of the project, the Online Examination System will deliver the following outcomes:
+1.	Fully Functional Platform:
+o	A robust and secure online examination system will be available, allowing students to log in, take exams, and view their results. The system will provide a user-friendly interface for students to navigate through their exams and results effortlessly.
+2.	Teacher-Managed Exam Content:
+o	Teachers will have the ability to create, manage, and update exam questions, adding them to the system’s question bank. This allows for a dynamic and flexible exam creation process that can be adapted to different subjects and difficulty levels.
+3.	Admin Control Over the System:
+o	Administrators will have complete control over user management, with the ability to add and remove users, view detailed student performance reports, and manage system data effectively. The system will provide all necessary tools for admins to oversee operations and ensure the platform runs smoothly.

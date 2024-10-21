@@ -1,5 +1,26 @@
-User Authentication for students, teachers, and admins.
-• Question Bank: Teachers and admins can add exam questions.
-• Online Exams: Students can take exams and get instant results.
-• Result Management: View and store exam results for students.
-• Admin Control: Admin can manage users and review results.
+The Online Examination System will be equipped with several core features designed to improve the examination process, ensure system security, and enhance the user experience. These features include:
+1.	User Authentication:
+o	Secure login system for students, teachers, and administrators, ensuring that only authorized users can access the platform.
+o	Multi-role authentication to differentiate the capabilities and permissions of students, teachers, and administrators.
+o	Integration with security protocols such as email verification, and, if needed, two-factor authentication (2FA) for additional security.
+
+2.	Question Bank:
+o	Teachers and administrators can create and store a wide range of exam questions in the system's question bank. This feature allows for the reuse of questions across multiple exams.
+o	The system supports various types of questions, including multiple-choice, true/false, short answer, and essay-style questions.
+o	The question bank will allow easy categorization and tagging of questions for future use, improving efficiency in exam creation.
+
+3.	Online Exams:
+o	Students will be able to take exams online from any location within a defined time window, allowing flexibility.
+o	The system will display the exam questions, collect answers, and automatically grade objective questions like multiple choice and true/false.
+o	Immediate feedback will be provided for objective questions, allowing students to view their results right after submitting the exam.
+
+4.	Result Management:
+o	Teachers and administrators will be able to view, store, and manage exam results, with automatic grading for objective questions.
+o	Detailed reports on student performance will be generated, including analysis of results to help teachers identify areas of improvement for their students.
+o	Exam results will be securely stored in the system, with provisions for backup and recovery to ensure data integrity.
+
+5.	Admin Control:
+o	Administrators will have comprehensive control over the platform, including the ability to add, remove, or manage users (students, teachers, and other administrators).
+o	Admins will be able to oversee all aspects of exam creation, execution, and result management, ensuring the smooth operation of the system.
+o	They will also have the ability to review system logs, monitor user activity, and manage permissions for different user roles.
+

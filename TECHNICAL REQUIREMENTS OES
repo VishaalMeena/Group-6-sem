@@ -1,5 +1,10 @@
-Programming Language: C++ (for backend logic)
-• Libraries: Standard C++ libraries for input/output, data structures, and
-strings.
-• Development Tools: Any C++ compiler like GCC, Turbo C++, or Visual
-Studio Code.
+The system will rely on the following technical specifications for development:
+
+1.	Programming Language:
+o	C++ will be used for developing the backend logic of the system, including the handling of user data, exam processing, and result computation. C++ is chosen for its speed, efficiency, and support for data structures necessary to manage large volumes of exam data.
+
+2.	Libraries:
+o	The system will utilize standard C++ libraries to handle input/output operations, string manipulation, and data structure management (e.g., arrays, lists, maps). These libraries are essential for tasks such as reading user input, managing question banks, and processing exam results.
+
+3.	Development Tools:
+o	C++ Compilers like GCC, Turbo C++, or Visual Studio Code will be used to write and compile the code. These tools provide an integrated environment for development, debugging, and testing the system’s functionalities.

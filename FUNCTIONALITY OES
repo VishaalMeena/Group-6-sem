@@ -1,6 +1,26 @@
-Student: Logs in, takes exams, and views results.
-• Teacher: Logs in, adds questions to the system.
-• Admin: Logs in, manages users, reviews student results, and adds
-questions.
-• Authentication: Ensures users are properly authenticated before
-accessing their respective functionalities.
+The Online Examination System will provide distinct functionalities for each type of user, ensuring that the system operates smoothly for students, teachers, and administrators. The main functionalities include:
+
+1.	Student:
+o	Logs in securely with their credentials and accesses their personalized dashboard.
+o	Views upcoming exams and receives notifications about exam schedules.
+o	Takes exams within a designated time frame, submitting answers for automated or manual grading.
+o	After completing the exam, the system provides immediate feedback for objective-type questions, while subjective answers may be evaluated manually by teachers.
+o	Views exam results and performance history through their dashboard, allowing them to track their academic progress over time.
+
+2.	Teacher:
+o	Logs in securely with credentials to access their account and dashboard.
+o	Creates and manages exam questions using an intuitive question editor that supports different types of questions (e.g., multiple choice, true/false, short answer).
+o	Adds these questions to the system’s question bank for future use, categorizing them by subject, difficulty level, or other attributes.
+o	Has access to student submissions, where they can review and manually grade subjective answers, if required.
+o	Views detailed reports on student performance and generates insights to help adjust teaching methods.
+3.	Admin:
+o	Logs in with administrator credentials to access the system’s control panel.
+o	Manages user accounts, including adding or removing students, teachers, and other admins. The admin assigns roles and permissions based on user type.
+o	Reviews student results and system reports, monitoring the platform’s performance.
+o	Adds or approves questions in the question bank, ensuring the quality and relevance of questions before they are used in exams.
+o	Oversees the overall system, addressing issues like performance bottlenecks, data security, and platform updates.
+
+4.	Authentication:
+o	Ensures secure access for students, teachers, and admins, preventing unauthorized users from accessing system features.
+o	The system uses encryption methods to store passwords securely, and options like two-factor authentication (2FA) can be implemented for additional security.
+o	Authentication protocols are in place to handle role-based access control, restricting users to their specific functionalities based on their roles.
